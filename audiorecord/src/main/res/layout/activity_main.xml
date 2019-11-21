@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record Area"
+        android:textSize="20sp"
+        />
+<Button
+    android:id="@+id/play_record"
+    android:onClick="startRecord"
+    android:layout_margin="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="RECORD "
+    android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/stop_record"
+        android:onClick="stopRecord"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP RECORD "
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record Area"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/play_file"
+        android:onClick="playFile"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY RECORD FILE"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/stop_file"
+        android:onClick="stopFile"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP RECORD FILE"
+        android:textSize="20sp"/>
+</LinearLayout>
+</layout>

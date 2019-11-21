@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/time_picker" />
+  <ToggleButton
+      android:onClick="onToggleButtonClicked"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="true"
+      android:id="@+id/toggle_btn"
+      android:textOn="on"
+      android:textOff="off"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/time_picker"
+      android:layout_marginTop="30dp"
+      tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/txt"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggle_btn"
+        android:layout_marginTop="30dp"
+        android:text="Alarm"
+        />
+</RelativeLayout>
